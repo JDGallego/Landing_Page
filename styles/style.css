@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1f1d2c;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    background-image: url(./Vectores/Rectangle\ 33-1.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: transparent;
+}
+nav>div img{
+    width: 24px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #ffffff); 
+}
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+input#menu-hamburguesa~ul{
+    background-color: #242635;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all 200ms linear;
+}
+input#menu-hamburguesa:checked ~ ul{
+    right: 0;
+}
+ul>li{
+    padding-bottom: 10px;
+}
+.home1{
+    color: #f1a600;
+}
+.titulo{
+    font-size: 100px;
+    font-weight: 600;
+    padding-top: 0.2em;
+}
+.subtitulo1{
+    font-size: 35px;
+    font-weight: 400;
+    padding: 1em 30% 0 0;
+}
+.subtitulo2{
+    font-size: 35px;
+    font-weight: 400;
+    padding-top: 1em;
+}
+#about-section{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;   
+}
+section .foto{
+    width: 560px;
+    padding: 10rem 4rem 4rem 0;
+}
+#about-section>div{
+    position: absolute;
+    left: 0;
+    padding: 0 6rem;
+}
+.social-icon-wrapper{
+    margin-top: 1rem;
+    padding-top: 1em;
+}
+.social-icon-wrapper>.icon{
+    margin-right: 1rem;
+    width: 35px;
+}
+.social-icon-wrapper{
+    margin-top: 1rem;
+}
+.social-icon-wrapper>.icon{
+    margin-right: 1rem;
+    width: 24px;
+}
+#personal-info-section{
+    text-align: center;
+    padding: 1.5rem;
+    background-image: url(./Vectores/Rectangle\ 33.svg);
+    background-repeat: repeat;
+    background-size: auto;
+}
+h2{
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+section .info{
+    justify-content: center;
+    padding: 1rem 17% 4rem 17%;
+}
+.academic-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+#personal-experiencia{
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 10rem 2rem 10rem;
+}
+
+section .Amazon{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+section .Amazon>img{
+    width: 110px;
+}
+
+section .Airbnb{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+section .Airbnb>img{
+    width: 110px;
+}
+
+section .Google{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+section .Google>img{
+    width: 111px;
+}
+
+@media only screen and (min-width: 768px){
+    label{
+        display: none;
+    }
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        
+    }
+    input#menu-hamburguesa~ul>li{
+        padding: 0 1rem;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .titulo{
+        padding-top: 0.2em;
+    }
+    .subtitulo1{
+        padding: 1em 30% 0 0;
+    }
+    .subtitulo2{
+        padding-top: 1em;
+    }
+    section .foto{
+        width: 650px;
+        padding: 9rem 6rem 5rem 0;
+    }
+    #about-section>div{
+        padding: 0 6rem;
+    }
+    .social-icon-wrapper{
+        margin-top: 1rem;
+        padding-top: 1em;
+    }
+    .social-icon-wrapper>.icon{
+        margin-right: 1rem;
+        width: 35px;
+    }
+}
+@media only screen and (min-width: 1300px){
+    body{
+
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 55%;
+    }
+    .titulo{
+        padding-top: 0.2em;
+        font-size: 100px;
+    }
+    .subtitulo1{
+        padding: 1em 20% 0 0;
+    }
+    .subtitulo2{
+        padding-top: 1em;
+    }
+    section .foto{
+        width: 700px;
+        padding: 9rem 7rem 5rem 0;
+    }
+    #about-section>div{
+        padding: 0 7rem;
+    }
+    .social-icon-wrapper{
+        margin-top: 1rem;
+        padding-top: 1em;
+    }
+    .social-icon-wrapper>.icon{
+        margin-right: 1rem;
+        width: 40px;
+    }
+}
