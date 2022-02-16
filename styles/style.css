@@ -3,16 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #1f1d2c;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
-    background-image: url(./Vectores/Rectangle\ 33-1.svg);
+    background-image: url(./Vectores/Rectangle\ 33.svg);
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 60%;
+    background-size: 55%;
 }
+
 nav{
     display: flex;
     justify-content: flex-end;
@@ -20,13 +22,16 @@ nav{
     padding: 0.8rem;
     background-color: transparent;
 }
+
 nav>div img{
     width: 24px;
     filter: opacity(0.5) drop-shadow(0 0 0 #ffffff); 
 }
+
 input#menu-hamburguesa{
     visibility: hidden;
 }
+
 input#menu-hamburguesa~ul{
     background-color: #242635;
     width: 100%;
@@ -36,59 +41,73 @@ input#menu-hamburguesa~ul{
     right: 100%;
     transition: all 200ms linear;
 }
+
 input#menu-hamburguesa:checked ~ ul{
     right: 0;
 }
+
 ul>li{
     padding-bottom: 10px;
 }
+
 .home1{
     color: #f1a600;
 }
+
 .titulo{
     font-size: 100px;
     font-weight: 600;
     padding-top: 0.2em;
 }
+
 .subtitulo1{
     font-size: 35px;
     font-weight: 400;
     padding: 1em 30% 0 0;
 }
+
 .subtitulo2{
     font-size: 35px;
     font-weight: 400;
     padding-top: 1em;
 }
+
 #about-section{
     position: relative;
     display: flex;
     justify-content: flex-end;   
 }
+
 section .foto{
     width: 560px;
     padding: 10rem 4rem 4rem 0;
 }
+
 #about-section>div{
     position: absolute;
     left: 0;
     padding: 0 6rem;
 }
+
 .social-icon-wrapper{
     margin-top: 1rem;
     padding-top: 1em;
 }
+
 .social-icon-wrapper>.icon{
     margin-right: 1rem;
     width: 35px;
 }
+
 .social-icon-wrapper{
     margin-top: 1rem;
 }
+
 .social-icon-wrapper>.icon{
     margin-right: 1rem;
     width: 24px;
 }
+
 #personal-info-section{
     text-align: center;
     padding: 1.5rem;
@@ -99,7 +118,7 @@ section .foto{
 h2{
     font-size: 35px;
     font-weight: 600;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 section .info{
     justify-content: center;
@@ -112,14 +131,28 @@ section .info{
 }
 
 #personal-experiencia{
+    position: relative;
     justify-content: center;
     text-align: center;
-    padding: 2rem 10rem 2rem 10rem;
+    padding: 2rem 10rem 3rem 10rem;
+}
+
+#personal-experiencia>img{
+    position: absolute;
+    right: 22%;
+    top: 30%;
+    width: 13px;
+}
+
+#personal-experiencia h3{
+   display: grid; 
+   place-items: center;
 }
 
 section .Amazon{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 1rem 0;
 }
 
@@ -130,6 +163,7 @@ section .Amazon>img{
 section .Airbnb{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 1rem 0;
 }
 
@@ -140,12 +174,94 @@ section .Airbnb>img{
 section .Google{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 1rem 0;
 }
 
 section .Google>img{
-    width: 111px;
+    width: 110px;
 }
+
+#personal-habilidades{
+    background-image: url(./Vectores/Rectangle\ 34-1.svg);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    padding: 1rem 2rem 2rem 24%;
+}
+
+#personal-habilidades h3{
+    color: #f1a600;
+    font-size: 45px;
+}
+
+#personal-habilidades p{
+    padding: 0 3rem;
+    font-weight: 400;
+}
+
+.Mobile-App{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.Motion-design{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.Creacion-Mantenimiento{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.Gestion-Proyectos{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+#personal-portafolio>h2{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#personal-portafolio h3{
+    padding-top: 1rem;
+}
+
+.secFirst{
+    padding-left: 170px;
+    padding-top: 3rem;
+}
+
+.secFirst>img{
+    width: 320px;
+    box-shadow: -12px -12px #f1a600, 12px -12px #f1a600;
+}
+
+.secSecond{
+    padding-left: 525px;
+    padding-top: 3rem;
+}
+
+.secSecond>img{
+    width: 320px;
+    box-shadow: -12px -12px #242635, 12px -12px #242635;
+}
+
+.secThird{
+    padding-top: 3rem;
+    padding-left: 170px;
+}
+
+.secThird>img{
+    width: 320px;
+    box-shadow: -12px -12px #f1a600, 12px -12px #f1a600;
+}
+
 
 @media only screen and (min-width: 768px){
     label{
