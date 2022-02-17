@@ -141,8 +141,8 @@ section .info{
 #personal-experiencia>img{
     position: absolute;
     right: 22%;
-    top: 30%;
-    width: 13px;
+    top: 27%;
+    width: 16px;
 }
 
 #personal-experiencia h3{
@@ -187,7 +187,7 @@ section .Google>img{
     background-image: url(./Vectores/Rectangle\ 34-1.svg);
     background-repeat: no-repeat;
     background-size: 35%;
-    padding: 1rem 2rem 2rem 24%;
+    padding: 1rem 2rem 2rem 20%;
 }
 
 #personal-habilidades h3{
@@ -234,7 +234,7 @@ section .Google>img{
 }
 
 .secFirst{
-    padding-left: 170px;
+    padding-left: 100px;
     padding-top: 3rem;
 }
 
@@ -244,7 +244,7 @@ section .Google>img{
 }
 
 .secSecond{
-    padding-left: 525px;
+    padding-left: 470px;
     padding-top: 3rem;
 }
 
@@ -255,7 +255,8 @@ section .Google>img{
 
 .secThird{
     padding-top: 3rem;
-    padding-left: 170px;
+    padding-left: 100px;
+    padding-bottom: 3rem;
 }
 
 .secThird>img{
@@ -631,6 +632,15 @@ footer img{
 }
 
 @media only screen and (min-width: 1100px){
+    
+    body{
+        background-size: 60%;
+    }
+
+    input#menu-hamburguesa~ul>li{
+        padding: 0 1.5rem;
+    }
+    
     .titulo{
         padding-top: 0.2em;
     }
@@ -641,8 +651,8 @@ footer img{
         padding-top: 1em;
     }
     section .foto{
-        width: 650px;
-        padding: 9rem 6rem 5rem 0;
+        width: 670px;
+        padding: 11rem 4rem 5rem 0;
     }
     #about-section>div{
         padding: 0 6rem;
@@ -655,17 +665,97 @@ footer img{
         margin-right: 1rem;
         width: 35px;
     }
-}
-@media only screen and (min-width: 1300px){
-    body{
 
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 55%;
+    #personal-habilidades{
+        padding: 1rem 2rem 2rem 22%;
+    }
+
+    #personal-experiencia>img{
+        right: 22%;
+        top: 26%;
+        width: 16px;
+    }
+
+    .secSecond{
+        padding-left: 580px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    
+    input#menu-hamburguesa~ul>li{
+        padding: 0 2rem;
+    }
+
+    body{
+        background-image: url(./Vectores/Rectangle\ 34.svg);
+        background-size: 62%;
+    }
+
+    section .foto{
+        width: 740px;
+        padding: 14rem 5rem 7rem 0;
+    }
+
+    .titulo{
+        padding-top: 0.1em;
+        font-size: 150px;
+    }
+
+    .subtitulo1{
+        padding: 1em 19% 0 0;
+    }
+
+    .secSecond{
+        padding-left: 700px;
+    }
+
+    .secFirst{
+        padding-left: 200px;
+        padding-top: 4rem;
+    }
+
+    .secThird{
+        padding-top: 4rem;
+        padding-left: 200px;
+    }
+
+    .secFirst>img{
+        width: 370px;
+        box-shadow: -15px -15px #f1a600, 15px -15px #f1a600;
+    }
+
+    .secSecond>img{
+        width: 370px;
+        box-shadow: -15px -15px #242635, 15px -15px #242635;
+    }
+   
+    .secThird>img{
+        width: 370px;
+        box-shadow: -15px -15px #f1a600, 15px -15px #f1a600;
+    }
+
+    footer img{
+        width: 33px;
+    }
+
+}
+
+
+@media only screen and (min-width: 1300px){
+   
+    input#menu-hamburguesa~ul>li{
+        padding: 0 2rem;
+    }
+   
+    body{
+        background-image: url(./Vectores/Rectangle\ 34.svg);
+        background-size: 58%;
     }
     .titulo{
-        padding-top: 0.2em;
-        font-size: 100px;
+        padding-top: 0.1em;
+        font-size: 150px;
     }
     .subtitulo1{
         padding: 1em 20% 0 0;
@@ -674,8 +764,8 @@ footer img{
         padding-top: 1em;
     }
     section .foto{
-        width: 700px;
-        padding: 9rem 7rem 5rem 0;
+        width: 720px;
+        padding: 14rem 5rem 7rem 0;
     }
     #about-section>div{
         padding: 0 7rem;
@@ -686,6 +776,48 @@ footer img{
     }
     .social-icon-wrapper>.icon{
         margin-right: 1rem;
-        width: 40px;
+        width: 55px;
     }
+
+    #personal-habilidades{
+        padding: 1rem 2rem 2rem 23%;
+    }
+
+    #personal-portafolio h3{
+        font-size: 30px;
+    }
+
+    .secSecond{
+        padding-left: 700px;
+    }
+
+    .secFirst{
+        padding-left: 200px;
+        padding-top: 4rem;
+    }
+
+    .secThird{
+        padding-top: 4rem;
+        padding-left: 200px;
+    }
+
+    .secFirst>img{
+        width: 420px;
+        box-shadow: -15px -15px #f1a600, 15px -15px #f1a600;
+    }
+
+    .secSecond>img{
+        width: 420px;
+        box-shadow: -15px -15px #242635, 15px -15px #242635;
+    }
+   
+    .secThird>img{
+        width: 420px;
+        box-shadow: -15px -15px #f1a600, 15px -15px #f1a600;
+    }
+
+    footer img{
+        width: 33px;
+    }
+
 }
