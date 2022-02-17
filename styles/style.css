@@ -44,6 +44,7 @@ input#menu-hamburguesa~ul{
 
 input#menu-hamburguesa:checked ~ ul{
     right: 0;
+    z-index: 9;
 }
 
 ul>li{
@@ -191,11 +192,11 @@ section .Google>img{
 
 #personal-habilidades h3{
     color: #f1a600;
-    font-size: 45px;
+    font-size: 55px;
 }
 
 #personal-habilidades p{
-    padding: 0 3rem;
+    padding: 0 29rem 0 4rem;
     font-weight: 400;
 }
 
@@ -262,21 +263,373 @@ section .Google>img{
     box-shadow: -12px -12px #f1a600, 12px -12px #f1a600;
 }
 
+#Contacto{
+    background-image: url(./Vectores/Rectangle\ 34.svg);
+    background-repeat: repeat;
+    text-align: center;
+    align-items: center;
+}
+
+#Contacto>div{
+    display: flex;
+    justify-content: center;
+}
+
+#Contacto>h2{
+    padding-top: 2rem;
+}
+
+#Contacto h3{
+    padding: 0.5rem 0;
+}
+
+#Contacto p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+
+.phone{
+    padding: 3rem 5rem 4rem 4rem;
+}
+
+.phone>img{
+   width: 80px;
+}
+
+.email{
+    padding: 5rem 4rem 4rem 5rem;
+}
+
+.email>img{
+   width: 80px;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer>p{
+    padding-top: 0.5rem;
+}
+
+footer>div{
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    padding-right: 0.5rem;
+}
+
+footer img{
+    width: 28px;
+}
 
 @media only screen and (min-width: 768px){
+   
     label{
         display: none;
     }
     input#menu-hamburguesa~ul{
         position: static;
         background-color: transparent;
-        display: flex;
-        
+        display: flex; 
     }
     input#menu-hamburguesa~ul>li{
         padding: 0 1rem;
     }
 }
+
+@media only screen and (max-width: 768px){
+   
+    body{
+        background-size: 60%;
+    }
+  
+    .titulo{
+        font-size: 50px;
+        padding-top: 0;
+    }
+    
+   .subtitulo1{
+        font-size: 20px;
+        padding: 1rem 5rem 0 0;
+    }
+    
+    .subtitulo2{
+        font-size: 18px;
+    }
+
+      section .foto{
+        width: 240px;
+        padding: 5rem 1rem 2rem 0;
+    }
+    
+    #about-section>div{
+        padding: 0 1rem;
+    }
+    
+    .social-icon-wrapper{
+        padding-top: 1rem;
+    }
+    
+    .social-icon-wrapper>.icon{
+        margin-right: 1rem;
+        width: 24px;
+    }
+    
+    .social-icon-wrapper{
+        margin-top: 0;
+    }
+    
+   #personal-info-section{
+        text-align: center;
+        padding: 1rem;
+    }
+    h2{
+        font-size: 32px;
+        padding-top: 0;
+    }
+    section .info{
+        padding: 1rem 0; 
+        text-align: center;
+        color: #e5e5e5;
+        font-size: 16px;
+    }
+    .academic-wrapper{
+        justify-content: space-around;
+        padding: 1rem 0;
+    }
+
+    .academic-wrapper img{
+        width: 50px;
+    }
+
+    .academic-wrapper h3{
+        font-size: 18px;
+        color: #e5e5e5
+    }
+
+    .academic-wrapper p{
+        font-size: 10px;
+        color: #e5e5e5        
+    }
+
+    #personal-experiencia{
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    
+    #personal-experiencia>img{
+        position: absolute;
+        right: 1rem;
+        top: 7rem;
+        width: 13px;
+    }
+    
+    #personal-experiencia h3{
+       display: grid; 
+       place-items: center;
+    }
+
+    #personal-experiencia h4{
+        font-size: 18px;
+        color: #e5e5e5;
+
+    }
+    
+    #personal-experiencia h5{
+        font-size: 12px;
+        color: #e5e5e5;
+    }
+
+    #personal-experiencia h6{
+        font-size: 10px;
+        color: #e5e5e5;
+    }
+
+    section .Amazon{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    section .Amazon>img{
+        width: 80px;
+    }
+
+    section .Amazon>div{
+        text-align: initial;
+        padding-right: 3rem;
+    }
+    
+    section .Airbnb{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    section .Airbnb>img{
+        width: 80px;
+    }
+
+    section .Airbnb>div{
+        text-align: initial;
+        padding-right: 3rem;
+    }
+    
+    section .Google{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    section .Google>img{
+        width: 80px;
+    }
+
+    section .Google>div{
+        text-align: initial;
+    }
+    
+    #personal-habilidades{
+        background-size: 150px;
+        background-repeat: repeat-y;
+        padding: 2rem 2rem 2rem 3rem;
+    }
+
+    #personal-habilidades>h2{
+        padding-left: 2rem;
+    }
+    
+    #personal-habilidades h3{
+        color: #f1a600;
+        font-size: 35px;
+    }
+    
+    #personal-habilidades p{
+        padding: 0 3rem;
+        font-weight: 400;
+    }
+    
+    .Mobile-App{
+        padding: 1rem 0;
+    }
+    
+    .Motion-design{
+        padding: 1rem 0;
+    }
+    
+    .Creacion-Mantenimiento{
+        padding: 1rem 0;
+    }
+    
+    .Gestion-Proyectos{
+        padding: 1rem 0;
+    }
+    
+
+    #personal-portafolio>h2{
+        padding-top: 2rem;
+    }
+    
+    #personal-portafolio h3{
+        padding-top: 0.3rem;
+    }
+    
+    .secFirst{
+        padding-left: 1rem;
+        padding-top: 3rem;
+    }
+    
+    .secFirst>img{
+        width: 200px;
+        box-shadow: -7px -9px #f1a600, 7px -9px #f1a600;
+    }
+    
+    .secSecond{
+        padding-left: 12rem;
+        padding-top: 1rem;
+    }
+    
+    .secSecond>img{
+        width: 200px;
+        box-shadow: -7px -9px #242635, 7px -9px #242635;
+    }
+    
+    .secThird{
+        padding: 1rem 0 7rem 1rem;
+    }
+    
+    .secThird>img{
+        width: 200px;
+        box-shadow: -7px -9px #f1a600, 7px -9px #f1a600;
+    }
+
+    
+
+    #Contacto>div{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #Contacto h3{
+        padding: 0.5rem 0;
+    }
+    
+    #Contacto p{
+        font-size: 14px;
+        font-weight: 400;
+        color: #e5e5e5;
+    }
+    
+    .phone{
+        padding: 3rem 1rem 1rem 1rem;
+    }
+    
+    .phone>img{
+       width: 80px;
+    }
+    
+    .email{
+        padding: 5rem 1rem 3rem 1rem;
+    }
+    
+    .email>img{
+       width: 80px;
+    }
+    
+    footer{
+        text-align: center;
+        padding: 3rem 0;
+    }
+    
+    footer>p{
+        padding-top: 0.5rem;
+    }
+    
+    footer>div{
+        display: flex;
+        justify-content: center;
+    }
+    
+    footer p{
+        padding-right: 0.5rem;
+    }
+    
+    footer img{
+        width: 28px;
+    }
+
+}
+
 @media only screen and (min-width: 1100px){
     .titulo{
         padding-top: 0.2em;
